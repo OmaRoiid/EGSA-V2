@@ -91,3 +91,7 @@ img{
   margin: 50px auto !important;
 }
 }
+.map{
+  height: 100%;
+  border: 0;
+}
