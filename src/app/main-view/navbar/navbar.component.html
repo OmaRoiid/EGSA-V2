@@ -1,0 +1,276 @@
+<div class="slider" id="slider">
+  <div class="slider__card">
+    <div class="slider__img text-center">
+      <img
+        src="../../../assets/EgsaLogo.png"
+        alt="app logo"
+        class="img-fluid"
+      />
+    </div>
+    <div class="slider__options mediumFont ml-2 mt-2">
+      <a
+        class="nav-link my-3"
+        [routerLink]="['./']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-home fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span>Home</span>
+          </div>
+        </div>
+      </a>
+      <a
+        class="nav-link my-2"
+        [routerLink]="['./About-Us']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-address-card fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span> About</span>
+          </div>
+        </div>
+      </a>
+      <a
+        class="nav-link my-3"
+        [routerLink]="['./divisions']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-bars fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span>DIVISIONS</span>
+          </div>
+        </div>
+      </a>
+
+      <a
+        class="nav-link my-3"
+        [routerLink]="['./profile']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-rocket fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span>PROJECTS</span>
+          </div>
+        </div>
+      </a>
+
+      <a
+        class="nav-link my-2"
+        [routerLink]="['/news']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-globe-africa fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span>TICO</span>
+          </div>
+        </div>
+      </a>
+      <a
+        class="nav-link my-3"
+        [routerLink]="['./news']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-newspaper fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span>NEWS</span>
+          </div>
+        </div>
+      </a>
+      <a
+        class="nav-link my-3"
+        [routerLink]="['./news']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-briefcase fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span>VACANCIES</span>
+          </div>
+        </div>
+      </a>
+      <a
+        class="nav-link my-3"
+        [routerLink]="['./Contact-Us']"
+        routerLinkActive="activeSlider"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="opption row m-0">
+          <div class="opption__icon col-3 my-auto text-center">
+            <i class="fas fa-inbox fa-1x"></i>
+          </div>
+          <div class="opption__text col-9 p-0">
+            <span>CONTACT US</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <nav
+    class="
+      navbar
+      smart-scroll
+      navbar-expand-xl
+      fixed-top
+      scrolled-up
+      navbar-dark
+    "
+    id="main_nav"
+  >
+    <a routerLink="/" class="text-decoration-none" routerLinkActive="active">
+      <div class="row company pl-5">
+        <img class="w-75" src="../../../assets/EgsaLogo.png" />
+      </div>
+    </a>
+    <button
+      class="navbar-toggler mr-5"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarContent"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="navbar-collapse"
+      [class.collapse]="collapsed"
+      id="navbarContent"
+    >
+      <ul class="navbar-nav ml-auto text-center">
+        <li
+          class="nav-item regulerLi"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a
+            routerLink="/"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link"
+          ></a>
+        </li>
+        <li
+          class="nav-item"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a
+            class="nav-link"
+            [routerLink]="['./home']"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <span>Home</span>
+          </a>
+        </li>
+        <li
+          class="nav-item"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a
+            class="nav-link"
+            [routerLink]="['./room']"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <span routerLinkActive> Room</span>
+          </a>
+        </li>
+        <li
+          class="nav-item regulerLi"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a
+            class="nav-link"
+            [routerLink]="['./menu']"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <span>Menu</span></a
+          >
+        </li>
+        <li
+          class="nav-item regulerLi"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a
+            class="nav-link"
+            [routerLink]="['./profile']"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <span>Profile</span>
+          </a>
+        </li>
+
+        <li
+          class="nav-item regulerLi"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a
+            class="nav-link"
+            [routerLink]="['./reviews']"
+            routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <span>Reviews</span>
+          </a>
+        </li>
+        <li
+          [routerLink]="['./reservation']"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="nav-item regulerLi"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a class="nav-link">
+            <span [routerLink]="['./reservation']">Reservation</span>
+          </a>
+        </li>
+        <li
+          routerLinkActive="active-link"
+          class="nav-item regulerLi"
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+        >
+          <a class="nav-link">
+            <span class="ml-1">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

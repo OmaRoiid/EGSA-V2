@@ -1,0 +1,46 @@
+<div class="paddingNegative">
+  <div class="row">
+    <div class="col-12 videoBG p-0">
+      <video class="w-100" autoplay loop muted>
+        <source
+          src="./../../../assets/pexels-abhijit-rout-8095903.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+  </div>
+  <div class="bgSlider p-5">
+    <ngb-carousel class="my-auto carouselCustom">
+      <ng-template ngbSlide *ngFor="let item of imageSlider">
+        <div class="row">
+          <div
+            data-aos="fade-left"
+            class="col-md-6 text-left text-light col-12 caption"
+          >
+            <span class="aquaText">{{ item.aquaText }}</span>
+            <h1>{{ item.SpaceName }}</h1>
+            <p>
+              {{ item.paragrapgh }}
+            </p>
+
+            <button class="learnMoreBtn">Learn more</button>
+          </div>
+          <div
+            data-aos="fade-right"
+            class="col-md-6 text-center spaceImage col-12"
+          >
+            <img
+              [src]="item.image"
+              alt="rocket"
+              class="img-fluid rightSliderImage"
+            />
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+    <!-- <div class="row">
+      <div class="col-12">
+      </div>
+    </div> -->
+  </div>
+</div>

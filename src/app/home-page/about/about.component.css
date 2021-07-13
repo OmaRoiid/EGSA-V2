@@ -1,0 +1,45 @@
+.about {
+  background: url("../../../assets/aboutBG.png");
+  background-size: 100%;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+h4 {
+  font-size: 22px;
+  color: #fff;
+}
+p {
+  color: #fff;
+  font-size: 17.5px;
+}
+.rightSliderImage {
+  animation: pulse 7s infinite ease-in-out;
+}
+.spaceImage {
+  animation: upAndDown 7s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

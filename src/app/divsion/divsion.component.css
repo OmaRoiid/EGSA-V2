@@ -1,0 +1,19 @@
+.division {
+  background-color: #000;
+  padding-top: 130px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 0.5rem !important;
+  background-color: #201f1f !important;
+  color: #fff;
+}
+.card img {
+  height: 120px;
+}
+.hr {
+  background-color: #fff;
+  width: 170px;
+  height: 2.5px;
+}

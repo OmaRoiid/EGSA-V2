@@ -1,0 +1,19 @@
+.carousel {
+  color: #fff;
+}
+.info h2 {
+  font-size: 40px;
+}
+.info p {
+  font-size: 30px;
+}
+.info button {
+  color: #fff;
+  background-color: red;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border: none;
+}

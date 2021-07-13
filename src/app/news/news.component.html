@@ -1,0 +1,104 @@
+<div class="news">
+  <div class="row m-0">
+    <div class="col-10 mx-auto">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="info row">
+              <div class="col-md-6 info--text">
+                <h2>Article</h2>
+                <h5 class="mt-2">Article Summery</h5>
+                <p class="mt-3">
+                  Egypt is a responsible user for outer space having the ability
+                  to carry outer space missions serving its national development
+                  and security objectives and competent of being an active
+                  member in global space initiatives. Egypt will be capable of
+                  carrying out deep space missions to explore and use space
+                  resources.
+                </p>
+                <div class="w-100 info--btn mt-5">
+                  <button>Reed More</button>
+                </div>
+              </div>
+              <div class="col-md-6 info--img">
+                <img class="w-75" src="../../assets/plant.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="info row">
+              <div class="col-md-6 info--text">
+                <h2>Article</h2>
+                <h5 class="mt-2">Article Summery</h5>
+                <p class="mt-3">
+                  Egypt is a responsible user for outer space having the ability
+                  to carry outer space missions serving its national development
+                  and security objectives and competent of being an active
+                  member in global space initiatives. Egypt will be capable of
+                  carrying out deep space missions to explore and use space
+                  resources.
+                </p>
+                <div class="w-100 info--btn mt-5">
+                  <button>Reed More</button>
+                </div>
+              </div>
+              <div class="col-md-6 info--img">
+                <img class="w-75" src="../../assets/plant.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="info row">
+              <div class="col-md-6 info--text">
+                <h2>Article</h2>
+                <h5 class="mt-2">Article Summery</h5>
+                <p class="mt-3">
+                  Egypt is a responsible user for outer space having the ability
+                  to carry outer space missions serving its national development
+                  and security objectives and competent of being an active
+                  member in global space initiatives. Egypt will be capable of
+                  carrying out deep space missions to explore and use space
+                  resources.
+                </p>
+                <div class="w-100 info--btn mt-5">
+                  <button>Reed More</button>
+                </div>
+              </div>
+              <div class="col-md-6 info--img">
+                <img class="w-75" src="../../assets/plant.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news--list mt-5 row">
+        <div class="card-group col-md-3 mt-2" *ngFor="let item of fakeObj">
+          <div class="card">
+            <img class="img-fluid" [src]="item.img" alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">{{ item.desc }}</p>
+              <p class="text-end" style="text-align: end">
+                <small class="text-muted" style="color: yellow !important"
+                  >read more</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

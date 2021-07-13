@@ -1,0 +1,73 @@
+:ng-deep .carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: none !important;
+}
+.paddingNegative {
+  overflow: hidden;
+}
+.bgSlider {
+  position: absolute;
+  top: 80px;
+  left: -1%;
+  width: 100%;
+}
+.caption {
+  line-height: 50px;
+}
+
+.aquaText {
+  color: turquoise;
+  font-size: 40px;
+  font-weight: bold;
+}
+.caption h1 {
+  font-size: 65px;
+  font-weight: bold;
+}
+.caption p {
+  font-size: 28px;
+  font-weight: 100;
+}
+.learnMoreBtn {
+  background-color: red;
+  border: 0;
+  color: #fff;
+  border-radius: 38px;
+  padding: 0px 15px;
+  font-size: 15px;
+}
+.rightSliderImage {
+  max-height: 325px !important;
+
+  animation: pulse 7s infinite ease-in-out;
+}
+.spaceImage {
+  animation: upAndDown 7s infinite ease-in-out;
+}
+.carouselCustom {
+  padding: 20px !important;
+}
+@keyframes pulse {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

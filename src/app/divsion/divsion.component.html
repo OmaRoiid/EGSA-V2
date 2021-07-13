@@ -1,0 +1,23 @@
+<div class="division">
+  <div class="row m-0">
+    <div class="col-9 mx-auto py-5">
+      <h2 style="color: #fff">Division</h2>
+      <div class="hr"></div>
+      <div class="division--list mt-5 row">
+        <div class="card-group col-md-3 mt-4" *ngFor="let item of fakeObj">
+          <div class="card">
+            <img class="w-100" [src]="item.img" alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">{{ item.desc }}</p>
+              <p class="text-end" style="text-align: end">
+                <small class="text-muted" style="color: yellow !important"
+                  >read more</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

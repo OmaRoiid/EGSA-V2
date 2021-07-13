@@ -1,0 +1,34 @@
+.news {
+  background-color: black;
+  color: #fff;
+  padding-top: 150px;
+}
+.slide {
+  border: 1px #fff solid;
+  padding: 40px;
+}
+.info--img img {
+  border: 1px #fff solid;
+}
+.card img {
+  height: 120px;
+}
+.info--btn button {
+  padding: 5px 10px;
+  background-color: red;
+  color: #fff;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border: none;
+}
+.carousel-indicators {
+  bottom: -45px !important;
+}
+.card-body {
+  padding: 0.5rem !important;
+  background-color: #201f1f !important;
+  color: #fff;
+}

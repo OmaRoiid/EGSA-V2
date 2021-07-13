@@ -1,0 +1,12 @@
+.slider {
+  background-color: black;
+  height: auto;
+}
+
+.slide {
+  border: 5px #fff solid;
+}
+.hr {
+  width: 1.5px;
+  background-color: #fff;
+}
